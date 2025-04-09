@@ -1,0 +1,38 @@
+.shuttle-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+input,
+select {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.shuttle-message {
+  color: #2d2d2d;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
