@@ -5,7 +5,7 @@ const backendURL = import.meta.env.VITE_BACKEND_URL;
 
 function Student({ suid }) {
   const [message, setMessage] = useState("");
-  const [isPolling, setIsPolling] = useState(false);
+  // const [isPolling, setIsPolling] = useState(false);
   const intervalRef = useRef(null);
 
   const fetchPickupStatus = () => {
@@ -28,10 +28,10 @@ function Student({ suid }) {
     fetchPickupStatus(); // initial request
 
     // Start polling every 1 second
-    if (!isPolling) {
-      intervalRef.current = setInterval(fetchPickupStatus, 1000);
-      setIsPolling(true);
-    }
+    // if (!isPolling) {
+    //   intervalRef.current = setInterval(fetchPickupStatus, 1000);
+    //   setIsPolling(true);
+    // }
   };
 
   useEffect(() => {
