@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1>Evening Shuttle Tracker</h1>
+        <h1>ShuttleGo</h1>
       </header>
       <main className="main-content">
         <section className="students-panel">
