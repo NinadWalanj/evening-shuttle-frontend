@@ -116,9 +116,6 @@ function Shuttle() {
         <hr />
 
         <div className="form-group">
-          <button className="btn location-btn" onClick={sendLocation}>
-            Send Location Once
-          </button>
           {!isSimulating ? (
             <button className="btn simulate-btn" onClick={startSimulation}>
               Start Location Simulation
