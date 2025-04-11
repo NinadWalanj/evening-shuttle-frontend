@@ -116,6 +116,18 @@ function Shuttle() {
         <hr />
 
         <div className="form-group">
+          <div className="form-group1">
+            Kindly click on the "Start Location Simulation" button to get an
+            accurate ETA during Shuttle transit. (Read more about this in the{" "}
+            <a
+              href="https://medium.com/@ninadwalanj/evening-shuttle-real-time-campus-shuttle-tracking-system-using-spring-boot-design-patterns-and-4a499990fdc2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium Blog
+            </a>
+            )
+          </div>
           {!isSimulating ? (
             <button className="btn simulate-btn" onClick={startSimulation}>
               Start Location Simulation
@@ -130,6 +142,13 @@ function Shuttle() {
 
       <div>
         <p className="shuttle-message">Shuttle Status: {shuttleStatus}</p>
+      </div>
+      <div>
+        <p className="shuttle-notif">
+          Please note: The backend is hosted on a free Render instance, which
+          will spin down during periods of inactivity. As a result, initial
+          requests may experience a delay of approximately 50 seconds or more.
+        </p>
       </div>
     </div>
   );
