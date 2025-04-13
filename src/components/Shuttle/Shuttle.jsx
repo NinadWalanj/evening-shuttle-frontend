@@ -144,7 +144,15 @@ function Shuttle() {
         <p className="shuttle-message">Shuttle Status: {shuttleStatus}</p>
       </div>
       <div>
-        <p className="shuttle-notif">
+        <p className="shuttle-notif1">
+          If the shuttle status displays 'Fetching Status', it indicates that
+          the server is currently inactive due to a period of inactivity.
+        </p>
+        <p className="shuttle-notif2">
+          To initiate a request to the server, please click the 'Request Pickup'
+          button for any student.
+        </p>
+        <p className="shuttle-notif1">
           Please note: The backend is hosted on a free Render instance, which
           will spin down during periods of inactivity. As a result, initial
           requests may experience a delay of approximately 50 seconds or more.
